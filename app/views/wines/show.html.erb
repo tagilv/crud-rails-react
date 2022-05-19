@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @wine.brand %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @wine.style %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @wine.country %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @wine.quantity %>
+</p>
+
+<%= link_to 'Edit', edit_wine_path(@wine) %> |
+<%= link_to 'Back', wines_path %>
