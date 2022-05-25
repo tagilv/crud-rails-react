@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    namespace :v1 do
+    namespace :v2 do
       get 'wines/index'
       post 'wines/create'
       delete 'wines/:id', to: 'wines#destroy'

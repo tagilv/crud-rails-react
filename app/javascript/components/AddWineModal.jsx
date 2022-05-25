@@ -10,7 +10,7 @@ class AddWineModal extends React.Component {
   };
 
   onFinish = (values) => {
-    const url = "api/v1/wines/";
+    const url = "api/v2/wines/";
     fetch(url, {
       method: "post",
       headers: {

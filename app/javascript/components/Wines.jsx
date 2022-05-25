@@ -46,7 +46,7 @@ class Wines extends React.Component {
   }
 
   loadWines = () => {
-    const url = "api/v1/wines/index";
+    const url = "api/v2/wines/index";
     fetch(url)
       .then((data) => {
         if (data.ok) {
@@ -79,7 +79,7 @@ class Wines extends React.Component {
   };
 
   deleteWine = (id) => {
-    const url = `api/v1/wines/${id}`;
+    const url = `api/v2/wines/${id}`;
 
     fetch(url, {
       method: "delete",
